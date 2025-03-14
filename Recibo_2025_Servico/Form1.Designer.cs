@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             txtdatadoservico = new Label();
-            txttipodoservico = new TextBox();
+            txtTipoServico = new TextBox();
             txttipodeservico = new Label();
-            txttipodopagamento = new TextBox();
+            txtTipoPagamento = new TextBox();
             label3 = new Label();
             datadoservico = new DateTimePicker();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtDescricaoServico = new TextBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtValorServicoPrestado = new TextBox();
             btnImprimir = new Button();
             SuspendLayout();
             // 
@@ -50,13 +50,13 @@
             txtdatadoservico.TabIndex = 0;
             txtdatadoservico.Text = "Data do Serviço";
             // 
-            // txttipodoservico
+            // txtTipoServico
             // 
-            txttipodoservico.Location = new Point(116, 50);
-            txttipodoservico.Margin = new Padding(3, 2, 3, 2);
-            txttipodoservico.Name = "txttipodoservico";
-            txttipodoservico.Size = new Size(110, 23);
-            txttipodoservico.TabIndex = 3;
+            txtTipoServico.Location = new Point(116, 50);
+            txtTipoServico.Margin = new Padding(3, 2, 3, 2);
+            txtTipoServico.Name = "txtTipoServico";
+            txtTipoServico.Size = new Size(110, 23);
+            txtTipoServico.TabIndex = 3;
             // 
             // txttipodeservico
             // 
@@ -67,13 +67,13 @@
             txttipodeservico.TabIndex = 2;
             txttipodeservico.Text = "Tipo de Serviço";
             // 
-            // txttipodopagamento
+            // txtTipoPagamento
             // 
-            txttipodopagamento.Location = new Point(139, 82);
-            txttipodopagamento.Margin = new Padding(3, 2, 3, 2);
-            txttipodopagamento.Name = "txttipodopagamento";
-            txttipodopagamento.Size = new Size(110, 23);
-            txttipodopagamento.TabIndex = 5;
+            txtTipoPagamento.Location = new Point(139, 82);
+            txtTipoPagamento.Margin = new Padding(3, 2, 3, 2);
+            txtTipoPagamento.Name = "txtTipoPagamento";
+            txtTipoPagamento.Size = new Size(110, 23);
+            txtTipoPagamento.TabIndex = 5;
             // 
             // label3
             // 
@@ -101,13 +101,13 @@
             label1.TabIndex = 6;
             label1.Text = "Descrição de Serviço";
             // 
-            // textBox1
+            // txtDescricaoServico
             // 
-            textBox1.Location = new Point(139, 147);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(110, 23);
-            textBox1.TabIndex = 7;
+            txtDescricaoServico.Location = new Point(139, 147);
+            txtDescricaoServico.Margin = new Padding(3, 2, 3, 2);
+            txtDescricaoServico.Name = "txtDescricaoServico";
+            txtDescricaoServico.Size = new Size(110, 23);
+            txtDescricaoServico.TabIndex = 7;
             // 
             // label2
             // 
@@ -118,14 +118,14 @@
             label2.TabIndex = 8;
             label2.Text = "Valor do serviço prestado ";
             // 
-            // textBox2
+            // txtValorServicoPrestado
             // 
-            textBox2.Location = new Point(158, 114);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(110, 23);
-            textBox2.TabIndex = 9;
-            textBox2.TextChanged += textBox1_TextChanged;
+            txtValorServicoPrestado.Location = new Point(158, 114);
+            txtValorServicoPrestado.Margin = new Padding(3, 2, 3, 2);
+            txtValorServicoPrestado.Name = "txtValorServicoPrestado";
+            txtValorServicoPrestado.Size = new Size(110, 23);
+            txtValorServicoPrestado.TabIndex = 9;
+            txtValorServicoPrestado.TextChanged += textBox1_TextChanged;
             // 
             // btnImprimir
             // 
@@ -135,6 +135,7 @@
             btnImprimir.TabIndex = 11;
             btnImprimir.Text = "Imprimir";
             btnImprimir.UseVisualStyleBackColor = true;
+            btnImprimir.Click += btnImprimir_Click;
             // 
             // Form1
             // 
@@ -143,13 +144,13 @@
             ClientSize = new Size(522, 190);
             Controls.Add(btnImprimir);
             Controls.Add(datadoservico);
-            Controls.Add(textBox2);
+            Controls.Add(txtValorServicoPrestado);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtDescricaoServico);
             Controls.Add(label1);
-            Controls.Add(txttipodopagamento);
+            Controls.Add(txtTipoPagamento);
             Controls.Add(label3);
-            Controls.Add(txttipodoservico);
+            Controls.Add(txtTipoServico);
             Controls.Add(txttipodeservico);
             Controls.Add(txtdatadoservico);
             Margin = new Padding(3, 2, 3, 2);
@@ -162,15 +163,15 @@
         #endregion
 
         private Label txtdatadoservico;
-        private TextBox txttipodoservico;
+        private TextBox txtTipoServico;
         private Label txttipodeservico;
-        private TextBox txttipodopagamento;
+        private TextBox txtTipoPagamento;
         private Label label3;
         private DateTimePicker datadoservico;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtDescricaoServico;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtValorServicoPrestado;
         private Button btnImprimir;
     }
 }

@@ -18,13 +18,18 @@ public partial class Form1 : Form
     {
         DadosServicoRequest request = new(
             Convert.ToDateTime(datadoservico),
-            txttipodeservico.Text,
-            descricaoServico.Text,
-            txtvalorservico.Text != string.Empty && Convert.ToDouble(txtvalorservico.Text) > 0 ? Convert.ToDouble(txtvalorservico.Text) : 0,
-            txttipodopagamento.Text
+            txtTipoServico.Text,
+            txtDescricaoServico.Text,
+            txtValorServicoPrestado.Text.Length > 0 ? Convert.ToDouble(txtValorServicoPrestado.Text) : 0,
+            txtTipoPagamento.Text
             );
 
         if (request is null)
             return;
+    }
+
+    private void btnImprimir_Click(object sender, EventArgs e)
+    {
+
     }
 }
