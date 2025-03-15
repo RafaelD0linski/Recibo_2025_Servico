@@ -17,7 +17,7 @@ public partial class InformacaoServico : Form
     public void ObterDadosServico()
     {
         DadosServicoRequest request = new(
-            Convert.ToDateTime(dataServi�o),
+            Convert.ToDateTime(dataServiço),
             txttipodeservico.Text,
             txtdescricaodoservico.Text,
             txtValorServicoPrestado.Text != string.Empty && Convert.ToDouble(txtValorServicoPrestado.Text) > 0 ? Convert.ToDouble(txtValorServicoPrestado.Text) : 0,
@@ -31,5 +31,11 @@ public partial class InformacaoServico : Form
     private void Form1_Load(object sender, EventArgs e)
     {
 
+    }
+
+    public void EnviarDdorForImpressao()
+    {
+        // objt desse método é pegar as info da primeira tela e enviar para a api 
+        // pesquisar sobre o https://github.com/QuestPDF/QuestPDF
     }
 }
