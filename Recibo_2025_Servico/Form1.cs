@@ -2,17 +2,16 @@ using Recibo_2025_Servico.ReciboServicoUseCase;
 
 namespace Recibo_2025_Servico;
 
-public partial class Form1 : Form
+public partial class InformacoesServico : Form
 {
     public DadosServicoRequest _dadosServico;
-    public Form1()
+    public InformacoesServico()
     {
         InitializeComponent();
     }
-
-    private void textBox1_TextChanged(object sender, EventArgs e)
+    private void Form1_Load(object sender, EventArgs e)
     {
-
+        datadoservico.Focus();
     }
 
     public void ObterDadosServico()
@@ -39,16 +38,6 @@ public partial class Form1 : Form
             return;
 
 
-
-    }
-
-    private void Form1_Load(object sender, EventArgs e)
-    {
-
-    }
-
-    private void label5_Click(object sender, EventArgs e)
-    {
 
     }
 }
