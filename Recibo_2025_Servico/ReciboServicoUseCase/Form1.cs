@@ -25,6 +25,7 @@ public partial class InformacoesServico : Form
             );
 
         if (request is null)
+          
             return;
 
         _dadosServico = request;
