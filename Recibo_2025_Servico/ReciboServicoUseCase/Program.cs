@@ -1,4 +1,4 @@
-namespace Recibo_2025_Servico
+namespace Recibo_2025_Servico.ReciboServicoUseCase
 {
     internal static class Program
     {
