@@ -4,6 +4,7 @@ namespace Recibo_2025_Servico;
 
 public partial class Form1 : Form
 {
+    public DadosServicoRequest _dadosServico;
     public Form1()
     {
         InitializeComponent();
@@ -26,9 +27,27 @@ public partial class Form1 : Form
 
         if (request is null)
             return;
+
+        _dadosServico = request;
+
+
     }
 
     private void btnImprimir_Click(object sender, EventArgs e)
+    {
+        if (_dadosServico is null)
+            return;
+
+
+
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label5_Click(object sender, EventArgs e)
     {
 
     }
