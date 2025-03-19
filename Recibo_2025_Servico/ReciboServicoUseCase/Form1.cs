@@ -27,8 +27,8 @@ public partial class InformacoesServico : Form
 
         if (request.descricaoServico == string.Empty )
         {
-            MensagemAviso mensagem = new("Erro", "Exitem campos incompletos", NivelAviso.Critico);
-            mensagem
+            //MensagemAviso mensagem = new("Erro", "Exitem campos incompletos", NivelAviso.Critico);
+            //mensagem
         }
 
         _dadosServico = request;
