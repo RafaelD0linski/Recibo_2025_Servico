@@ -18,7 +18,7 @@ public partial class InformacoesServico : Form
     public void ObterDadosServico()
     {
         DadosServicoRequest request = new(
-           // Convert.ToDateTime(datadoservico),
+            datadoservico is null ? DateTime.Now : Convert.ToDateTime(datadoservico),
             txtTipoServico.Text,
             txtDescricaoServico.Text,
             txtValorServicoPrestado.Text.Length > 0 ? Convert.ToDouble(txtValorServicoPrestado.Text) : 0,

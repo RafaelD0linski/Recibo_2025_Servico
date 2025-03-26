@@ -18,7 +18,7 @@ public class MensagemAviso
         Titulo = titulo;
         Mensagem = mensagem;
         Nivel = nivel;
-        DataHora = DateTime.Now; // Define automaticamente a data/hora da criação
+        DataHora = DateTime.Now;
     }
 
     public override string ToString()
