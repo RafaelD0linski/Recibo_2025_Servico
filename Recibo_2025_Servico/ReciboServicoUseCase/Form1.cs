@@ -21,7 +21,12 @@ public partial class InformacoesServico : Form
             txtTipoServico.Text,
             txtDescricaoServico.Text,
             txtValorServicoPrestado.Text.Length > 0 ? Convert.ToDouble(txtValorServicoPrestado.Text) : 0,
-            txtTipoPagamento.Text
+            txtTipoPagamento.Text,
+            txtCep.Text,
+            txtCidade.Text,
+            txtrua.Text,
+            txtnumEnd.Text,
+            cbestado.Text
             );
 
         if (request is null)
@@ -29,8 +34,6 @@ public partial class InformacoesServico : Form
             return;
 
         _dadosServico = request;
-
-
     }
 
     private void btnImprimir_Click(object sender, EventArgs e)

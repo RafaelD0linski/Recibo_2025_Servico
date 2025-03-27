@@ -41,16 +41,16 @@
             btnImprimir = new Button();
             txtCidade = new Label();
             label5 = new Label();
-            textBox2 = new TextBox();
+            txtrua = new TextBox();
             label4 = new Label();
             txtCep = new TextBox();
             lblvalordoservico = new Label();
             txtEndServico = new TextBox();
-            comboBox1 = new ComboBox();
+            cbestado = new ComboBox();
             pictureBox1 = new PictureBox();
             label6 = new Label();
             Numero = new Label();
-            textBox1 = new TextBox();
+            txtnumEnd = new TextBox();
             pictureBox2 = new PictureBox();
             label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -79,7 +79,7 @@
             txttipodeservico.AutoSize = true;
             txttipodeservico.Location = new Point(7, 74);
             txttipodeservico.Name = "txttipodeservico";
-            txttipodeservico.Size = new Size(87, 15);
+            txttipodeservico.Size = new Size(88, 15);
             txttipodeservico.TabIndex = 2;
             txttipodeservico.Text = "Tipo de Serviço";
             // 
@@ -96,7 +96,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(8, 101);
             label3.Name = "label3";
-            label3.Size = new Size(110, 15);
+            label3.Size = new Size(111, 15);
             label3.TabIndex = 4;
             label3.Text = "Tipo de pagamento";
             // 
@@ -171,13 +171,13 @@
             label5.TabIndex = 15;
             label5.Text = "Rua";
             // 
-            // textBox2
+            // txtrua
             // 
-            textBox2.Location = new Point(46, 278);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(214, 23);
-            textBox2.TabIndex = 16;
+            txtrua.Location = new Point(46, 278);
+            txtrua.Margin = new Padding(3, 2, 3, 2);
+            txtrua.Name = "txtrua";
+            txtrua.Size = new Size(214, 23);
+            txtrua.TabIndex = 16;
             // 
             // label4
             // 
@@ -213,13 +213,13 @@
             txtEndServico.Size = new Size(137, 23);
             txtEndServico.TabIndex = 23;
             // 
-            // comboBox1
+            // cbestado
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(64, 333);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(108, 23);
-            comboBox1.TabIndex = 24;
+            cbestado.FormattingEnabled = true;
+            cbestado.Location = new Point(64, 333);
+            cbestado.Name = "cbestado";
+            cbestado.Size = new Size(108, 23);
+            cbestado.TabIndex = 24;
             // 
             // pictureBox1
             // 
@@ -249,13 +249,13 @@
             Numero.TabIndex = 19;
             Numero.Text = "Numero";
             // 
-            // textBox1
+            // txtnumEnd
             // 
-            textBox1.Location = new Point(73, 305);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(57, 23);
-            textBox1.TabIndex = 20;
+            txtnumEnd.Location = new Point(73, 305);
+            txtnumEnd.Margin = new Padding(3, 2, 3, 2);
+            txtnumEnd.Name = "txtnumEnd";
+            txtnumEnd.Size = new Size(57, 23);
+            txtnumEnd.TabIndex = 20;
             // 
             // pictureBox2
             // 
@@ -285,14 +285,14 @@
             Controls.Add(pictureBox2);
             Controls.Add(label6);
             Controls.Add(pictureBox1);
-            Controls.Add(comboBox1);
+            Controls.Add(cbestado);
             Controls.Add(txtEndServico);
             Controls.Add(lblvalordoservico);
-            Controls.Add(textBox1);
+            Controls.Add(txtnumEnd);
             Controls.Add(Numero);
             Controls.Add(txtCep);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtrua);
             Controls.Add(label5);
             Controls.Add(txtCidade);
             Controls.Add(btnImprimir);
@@ -331,16 +331,16 @@
         private Button btnImprimir;
         private Label txtCidade;
         private Label label5;
-        private TextBox textBox2;
+        private TextBox txtrua;
         private Label label4;
         private TextBox txtCep;
         private Label lblvalordoservico;
         private TextBox txtEndServico;
-        private ComboBox comboBox1;
+        private ComboBox cbestado;
         private PictureBox pictureBox1;
         private Label label6;
         private Label Numero;
-        private TextBox textBox1;
+        private TextBox txtnumEnd;
         private PictureBox pictureBox2;
         private Label label7;
     }
