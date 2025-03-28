@@ -23,7 +23,7 @@ public class MensagemAviso
 
     public override string ToString()
     {
-        return $"[{DataHora}] ({Nivel}) {Titulo}: {Mensagem}";
+        return $"{Nivel} {Titulo}: {Mensagem}";
     }
 }
 

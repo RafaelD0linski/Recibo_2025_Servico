@@ -18,7 +18,7 @@ public partial class InformacoesServico : Form
     public void ObterDadosServico()
     {
         DadosServicoRequest request = new(
-            datadoservico is null ? DateTime.Now : Convert.ToDateTime(datadoservico),
+            //datadoservico.Value,
             txtTipoServico.Text,
             txtDescricaoServico.Text,
             txtValorServicoPrestado.Text.Length > 0 ? Convert.ToDouble(txtValorServicoPrestado.Text) : 0,
@@ -30,17 +30,22 @@ public partial class InformacoesServico : Form
             cbestado.Text
             );
 
-        if (request.descricaoServico == string.Empty )
-        {
-            //MensagemAviso mensagem = new("Erro", "Exitem campos incompletos", NivelAviso.Critico);
-            //mensagem
-        }
-
         _dadosServico = request;
     }
 
     private void btnImprimir_Click(object sender, EventArgs e)
     {
         ObterDadosServico();
+    }
+
+    public void ValidarCampos(DadosServicoRequest request)
+    {
+          
+        if (request is null)
+        {
+            MensagemAviso mensagem = new("Erro", "Exitem campos incompletos", NivelAviso.Alerta);
+
+            MessageBox.Show(mensagem.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }
