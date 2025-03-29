@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recibo_2025_Servico;
+using System;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
@@ -10,7 +11,10 @@ public partial class Form1 : Form
 
     public Form1()
     {
-        InitializeComponent();
+        InformacoesServico frm = new();
+        frm.InitializeComponent();
+        frm.Show();
+
         _httpClient = new HttpClient();
     }
 
