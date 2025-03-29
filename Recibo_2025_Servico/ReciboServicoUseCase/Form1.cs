@@ -1,5 +1,7 @@
 using Recibo_2025_Servico.MensagemDeAvisoUseCase;
 using Recibo_2025_Servico.ReciboServicoUseCase;
+using System.Net.Http;
+using System.Net.Http.Json;
 
 namespace Recibo_2025_Servico;
 
