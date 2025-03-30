@@ -7,10 +7,14 @@ namespace Recibo_2025_Servico;
 
 public partial class InformacoesServico : Form
 {
+    private readonly HttpClient _httpClient;
     public DadosServicoRequest _dadosServico;
+
+
     public InformacoesServico()
     {
         InitializeComponent();
+        _httpClient = new HttpClient();
     }
     private void Form1_Load(object sender, EventArgs e)
     {
@@ -38,16 +42,44 @@ public partial class InformacoesServico : Form
     private void btnImprimir_Click(object sender, EventArgs e)
     {
         ObterDadosServico();
+        if (!ValidarCampos(_dadosServico))
+        {
+            return; // Interrompe a execução se houver erro.
+        }
+
+        // Lógica de impressão aqui...
     }
 
-    public void ValidarCampos(DadosServicoRequest request)
-    {
-          
-        if (request is null)
-        {
-            MensagemAviso mensagem = new("Erro", "Exitem campos incompletos", NivelAviso.Alerta);
 
-            MessageBox.Show(mensagem.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+    private async void ObterdadosApi(object sender, EventArgs e)
+    {
+        try
+        {
+            var produtos = await _httpClient.GetFromJsonAsync<string[]>("https://localhost:7015/api/Produto");
+
+            if (produtos != null && produtos.Length > 0)
+            {
+                listBoxProdutos.DataSource = produtos; // Supondo que você tenha um ListBox chamado listBoxProdutos
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Erro ao buscar produtos: " + ex.Message);
         }
     }
+
+
+
+    public bool ValidarCampos(DadosServicoRequest request)
+    {
+        if (request == null || string.IsNullOrWhiteSpace(request.TipoServico) || string.IsNullOrWhiteSpace(request.DescricaoServico))
+        {
+            MensagemAviso mensagem = new("Erro", "Existem campos incompletos", NivelAviso.Alerta);
+            MessageBox.Show(mensagem.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
+        }
+        return true;
+    }
+
 }

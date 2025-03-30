@@ -11,7 +11,7 @@ public partial class Form1 : Form
 
     public Form1()
     {
-        InformacoesServico frm = new();
+        InformacoesServico          frm = new();
         frm.InitializeComponent();
         frm.Show();
 
