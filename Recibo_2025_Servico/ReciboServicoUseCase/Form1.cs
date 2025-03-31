@@ -10,7 +10,6 @@ public partial class InformacoesServico : Form
     private readonly HttpClient _httpClient;
     public DadosServicoRequest _dadosServico;
 
-
     public InformacoesServico()
     {
         InitializeComponent();
@@ -60,7 +59,7 @@ public partial class InformacoesServico : Form
 
             if (produtos != null && produtos.Length > 0)
             {
-                listBoxProdutos.DataSource = produtos; // Supondo que você tenha um ListBox chamado listBoxProdutos
+                
             }
         }
         catch (Exception ex)
@@ -69,11 +68,9 @@ public partial class InformacoesServico : Form
         }
     }
 
-
-
     public bool ValidarCampos(DadosServicoRequest request)
     {
-        if (request == null || string.IsNullOrWhiteSpace(request.TipoServico) || string.IsNullOrWhiteSpace(request.DescricaoServico))
+        if (request == null || string.IsNullOrWhiteSpace(request.tipoServico) || string.IsNullOrWhiteSpace(request.descricaoServico))
         {
             MensagemAviso mensagem = new("Erro", "Existem campos incompletos", NivelAviso.Alerta);
             MessageBox.Show(mensagem.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
