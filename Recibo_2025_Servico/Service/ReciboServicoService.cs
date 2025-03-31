@@ -12,7 +12,7 @@ public partial class Form1 : Form
     public Form1()
     {
         InformacoesServico          frm = new();
-        frm.InitializeComponent();
+        //frm.InitializeComponent();
         frm.Show();
 
         _httpClient = new HttpClient();
@@ -26,8 +26,8 @@ public partial class Form1 : Form
             var produtos = await _httpClient.GetFromJsonAsync<string[]>("https://localhost:7015/api/Produto");
 
             // Exibe os produtos em um ListBox, por exemplo
-            listBoxProdutos.Items.Clear();
-            listBoxProdutos.Items.AddRange(produtos);
+            //listBoxProdutos.Items.Clear();
+            //listBoxProdutos.Items.AddRange(produtos);
         }
         catch (Exception ex)
         {

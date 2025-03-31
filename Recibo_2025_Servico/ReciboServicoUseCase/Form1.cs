@@ -1,7 +1,10 @@
+using iTextSharp.text.pdf;
+using iTextSharp.text;
 using Recibo_2025_Servico.MensagemDeAvisoUseCase;
 using Recibo_2025_Servico.ReciboServicoUseCase;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Diagnostics;
 
 namespace Recibo_2025_Servico;
 
@@ -50,6 +53,30 @@ public partial class InformacoesServico : Form
     }
 
 
+    private void btnGerarPDF_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            // Caminho onde o PDF será salvo (pasta do projeto)
+            string caminho = Path.Combine(Application.StartupPath, "MeuArquivo.pdf");
+
+            // Criar o documento
+            Document doc = new Document(PageSize.A4);
+            PdfWriter.GetInstance(doc, new FileStream(caminho, FileMode.Create));
+
+            doc.Open();
+            doc.Add(new Paragraph("Olá, este é um PDF gerado pelo meu programa!"));
+            doc.Close();
+
+            Process.Start(new ProcessStartInfo(caminho) { UseShellExecute = true });
+
+            MessageBox.Show("PDF gerado e aberto com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Erro ao gerar PDF: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+    }
 
     private async void ObterdadosApi(object sender, EventArgs e)
     {
