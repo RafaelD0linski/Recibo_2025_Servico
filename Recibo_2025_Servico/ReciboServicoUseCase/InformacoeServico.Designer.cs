@@ -132,7 +132,7 @@
             // 
             // txtValorServicoPrestado
             // 
-            txtValorServicoPrestado.Location = new Point(178, 167);
+            txtValorServicoPrestado.Location = new Point(194, 168);
             txtValorServicoPrestado.Name = "txtValorServicoPrestado";
             txtValorServicoPrestado.Size = new Size(153, 27);
             txtValorServicoPrestado.TabIndex = 9;
