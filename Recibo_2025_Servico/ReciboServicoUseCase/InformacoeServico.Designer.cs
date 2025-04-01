@@ -100,7 +100,7 @@
             // 
             // datadoservico
             // 
-            datadoservico.Location = new Point(114, 59);
+            datadoservico.Location = new Point(127, 62);
             datadoservico.Name = "datadoservico";
             datadoservico.Size = new Size(250, 27);
             datadoservico.TabIndex = 10;
