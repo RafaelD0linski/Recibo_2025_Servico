@@ -1,6 +1,6 @@
 ﻿namespace Recibo_2025_Servico.ReciboServicoUseCase
 {
-    partial class InfromacoesRemetente
+    partial class InfromacoesCredor
     {
         /// <summary>
         /// Required designer variable.
@@ -233,9 +233,9 @@
             label10.BackColor = SystemColors.AppWorkspace;
             label10.Location = new Point(135, 9);
             label10.Name = "label10";
-            label10.Size = new Size(163, 20);
+            label10.Size = new Size(138, 20);
             label10.TabIndex = 22;
-            label10.Text = "Informações remetente";
+            label10.Text = "Informações credor";
             // 
             // label11
             // 
@@ -248,7 +248,7 @@
             label11.Text = "Endereço Remetente";
             label11.Click += label11_Click;
             // 
-            // InfromacoesRemetente
+            // InfromacoesCredor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -276,8 +276,8 @@
             Controls.Add(txtNome);
             Controls.Add(label1);
             Controls.Add(button1);
-            Name = "InfromacoesRemetente";
-            Text = "InfromacoesRemetente";
+            Name = "InfromacoesCredor";
+            Text = "InfromacoesCredor";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

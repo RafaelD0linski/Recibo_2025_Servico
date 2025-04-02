@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Recibo_2025_Servico.ReciboServicoUseCase
 {
-    public partial class InfromacoesRemetente : Form
+    public partial class InfromacoesCredor : Form
     {
-        public InfromacoesRemetente()
+        public InfromacoesCredor()
         {
             InitializeComponent();
         }
