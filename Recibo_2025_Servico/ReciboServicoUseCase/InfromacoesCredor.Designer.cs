@@ -211,7 +211,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = SystemColors.AppWorkspace;
+            pictureBox1.BackColor = Color.FromArgb(128, 255, 128);
             pictureBox1.Location = new Point(-4, -30);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(482, 73);
@@ -220,7 +220,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = SystemColors.AppWorkspace;
+            pictureBox2.BackColor = Color.FromArgb(128, 255, 128);
             pictureBox2.Location = new Point(-4, 174);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(482, 47);
@@ -230,7 +230,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.BackColor = SystemColors.AppWorkspace;
+            label10.BackColor = Color.FromArgb(128, 255, 128);
             label10.Location = new Point(135, 9);
             label10.Name = "label10";
             label10.Size = new Size(138, 20);
@@ -240,12 +240,12 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.BackColor = SystemColors.AppWorkspace;
+            label11.BackColor = Color.FromArgb(128, 255, 128);
             label11.Location = new Point(136, 189);
             label11.Name = "label11";
-            label11.Size = new Size(147, 20);
+            label11.Size = new Size(120, 20);
             label11.TabIndex = 23;
-            label11.Text = "Endereço Remetente";
+            label11.Text = "Endereço Credor";
             label11.Click += label11_Click;
             // 
             // InfromacoesCredor

@@ -55,6 +55,12 @@ public partial class InformacoesServico : Form
 
     private void btnGerarPDF_Click(object sender, EventArgs e)
     {
+        informa
+    }
+
+
+    public void GerarPdf()
+    {
         try
         {
             // Caminho onde o PDF será salvo (pasta do projeto)
