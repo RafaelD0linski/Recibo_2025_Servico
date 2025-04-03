@@ -243,7 +243,7 @@
             button1.Name = "button1";
             button1.Size = new Size(125, 29);
             button1.TabIndex = 24;
-            button1.Text = "Proximo";
+            button1.Text = "Imprimir";
             button1.UseVisualStyleBackColor = true;
             // 
             // InformacoesDevedor

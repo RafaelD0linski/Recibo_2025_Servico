@@ -29,7 +29,8 @@ namespace Recibo_2025_Servico.ReciboServicoUseCase
 
         private void ProximaTela()
         {
-            
+            InformacoesDevedor informacoesDevedor = new InformacoesDevedor();
+            informacoesDevedor.ShowDialog();
         }
     }
 }
