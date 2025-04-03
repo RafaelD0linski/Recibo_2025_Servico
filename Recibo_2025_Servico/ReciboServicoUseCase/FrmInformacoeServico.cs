@@ -55,7 +55,8 @@ public partial class InformacoesServico : Form
 
     private void btnGerarPDF_Click(object sender, EventArgs e)
     {
-        informa
+        FrmInfromacoesCredor frmInfromacoesCredor = new FrmInfromacoesCredor();
+        frmInfromacoesCredor.ShowDialog();
     }
 
 

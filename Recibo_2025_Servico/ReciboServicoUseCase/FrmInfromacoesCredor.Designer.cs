@@ -248,7 +248,7 @@
             label11.Text = "Endereço Credor";
             label11.Click += label11_Click;
             // 
-            // InfromacoesCredor
+            // FrmInfromacoesCredor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -276,7 +276,7 @@
             Controls.Add(txtNome);
             Controls.Add(label1);
             Controls.Add(button1);
-            Name = "InfromacoesCredor";
+            Name = "FrmInfromacoesCredor";
             Text = "InfromacoesCredor";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
