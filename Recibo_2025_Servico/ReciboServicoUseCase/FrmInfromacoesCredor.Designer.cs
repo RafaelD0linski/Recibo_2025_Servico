@@ -1,6 +1,6 @@
 ﻿namespace Recibo_2025_Servico.ReciboServicoUseCase
 {
-    partial class InfromacoesCredor
+    partial class FrmInfromacoesCredor
     {
         /// <summary>
         /// Required designer variable.
